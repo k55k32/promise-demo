@@ -114,6 +114,16 @@ class DPromise {
   catch(onRejected) {
     this.then(null, onRejected)
   }
+  finally(callback) {
+    return this.then(
+      value => DPromise.resolve(callback()).then(_ => value),
+      reason => {
+        return DPromise.resolve(callback()).then(() => {
+          throw reason
+        })
+      }
+    )
+  }
   static resolve(data) {
     if (data instanceof DPromise) {
       return data
