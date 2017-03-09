@@ -1,0 +1,25 @@
+{
+  "name": "promise-demo",
+  "version": "1.0.0",
+  "description": "promise-demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "supervisor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k55k32/promise-demo.git"
+  },
+  "keywords": [
+    "promise",
+    "demo"
+  ],
+  "author": "Diamond <diamondfsd@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k55k32/promise-demo/issues"
+  },
+  "homepage": "https://github.com/k55k32/promise-demo#readme",
+  "devDependencies": {
+  }
+}
